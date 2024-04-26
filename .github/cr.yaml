@@ -2,3 +2,5 @@ owner: ajna-inc
 git-repo: traction
 git-base-url: https://api.github.com/
 git-upload-url: https://uploads.github.com/
+tag_name: traction-ajna
+
