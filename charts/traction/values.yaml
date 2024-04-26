@@ -594,7 +594,7 @@ ui:
   requireEmailForReservation: true
   image:
     ## @param ui.image.repository
-    repository: ghcr.io/ajna-inc/traction-tenant-ui
+    repository: "ghcr.io/ajna-inc/traction-tenant-ui:sha-62e0f95"
     ## @param ui.image.pullPolicy
     pullPolicy: IfNotPresent
     ## @param ui.image.pullSecrets [array]
