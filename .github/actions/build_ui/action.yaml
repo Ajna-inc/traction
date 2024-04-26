@@ -114,7 +114,7 @@ runs:
     - id: values
       shell: bash
       run: |
-        image_tag=$(echo "${{ fromJSON(steps.meta.outputs.json).tags[0]}}" | cut -d':' -f1)
+        image_tag=$(echo "${{ fromJSON(steps.meta.outputs.json).tags[0]}}" | sed 's/:sha-.*//')
         image_version="${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}"
         buildtime="${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}"
         echo "image_tag=${image_tag}" >> $GITHUB_OUTPUT
