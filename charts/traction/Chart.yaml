@@ -4,8 +4,8 @@ description: The Traction service allows organizations to verify, hold, and issu
 type: application
 version: 0.3.0
 appVersion: 0.4.1
-home: "https://github.com/bcgov/traction"
-sources: ["https://github.com/bcgov/traction"]
+home: "https://github.com/Ajna-inc/traction"
+sources: ["https://github.com/Ajna-inc/traction"]
 icon: "https://github.com/bcgov/traction/raw/main/docs/assets/readme-logo.png"
 maintainers:
   - email: ivan.polchenko@quartech.com

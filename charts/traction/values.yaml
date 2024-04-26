@@ -594,7 +594,7 @@ ui:
   requireEmailForReservation: true
   image:
     ## @param ui.image.repository
-    repository: ghcr.io/bcgov/traction-tenant-ui
+    repository: vinayajna/traction:latest
     ## @param ui.image.pullPolicy
     pullPolicy: IfNotPresent
     ## @param ui.image.pullSecrets [array]
