@@ -3,7 +3,7 @@ nameOverride: ""
 ## @param fullnameOverride
 fullnameOverride: ""
 ## @param ingressSuffix Domain suffix to be used for default hostpaths in ingress
-ingressSuffix: -dev.example.com
+ingressSuffix: ""
 
 ## @section Acapy Configuration
 ##
@@ -500,7 +500,7 @@ tenant_proxy:
   service:
     ## @param tenant_proxy.service.type Kubernetes Service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
     ## @param tenant_proxy.service.port Port to expose for http services
     port: 8032
 
