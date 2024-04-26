@@ -730,7 +730,7 @@ ui:
   service:
     ## @param ui.service.type Kubernetes Service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
     ## @param ui.service.httpPort Port to expose for http service
     ##
     httpPort: 8080
@@ -744,9 +744,13 @@ ui:
     ## @param ui.networkPolicy.ingress.namespaceSelector [object] Namespace selector label that is allowed to access the tenant-ui pods.
     ## @param ui.networkPolicy.ingress.podSelector [object] Pod selector label that is allowed to access the tenant-ui pods.
     ingress:
-      enabled: false
-      namespaceSelector: {}
-      podSelector: {}
+      enabled: true
+      namespaceSelector: {
+
+      }
+      podSelector: {
+
+      }
   ##Resource requests and limits
   ## ref: https://kubernetes.io/docs/user-guide/compute-resources/
   ## @param ui.resources.limits.memory The memory limit for the tenant-ui containers
