@@ -6,4 +6,3 @@
 *.gif binary
 *.png binary
 *.mp4 binary filter=lfs diff=lfs merge=lfs
-
