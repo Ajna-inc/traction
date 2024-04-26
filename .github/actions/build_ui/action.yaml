@@ -117,6 +117,6 @@ runs:
         image_tag=$(echo "${{ fromJSON(steps.meta.outputs.json).tags[0]}" | cut -d':' -f1)
         image_version="${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}"
         buildtime="${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}"
-        echo "image_tag=${{ fromJSON(steps.meta.outputs.json).tags[0] }}" >> $GITHUB_OUTPUT
-        echo "image_version=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.version'] }}" >> $GITHUB_OUTPUT
-        echo "buildtime=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}" >> $GITHUB_OUTPUT
+        echo "image_tag=${image_tag}" >> $GITHUB_OUTPUT
+        echo "image_version=${image_version}" >> $GITHUB_OUTPUT
+        echo "buildtime=${buildtime}" >> $GITHUB_OUTPUT
