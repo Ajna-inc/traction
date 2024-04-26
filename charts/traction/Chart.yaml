@@ -2,7 +2,7 @@ apiVersion: v2
 name: traction
 description: The Traction service allows organizations to verify, hold, and issue verifiable credentials. The Traction Tenant UI allows tenants to manage their agent.
 type: application
-version: 0.0.a1
+version: 0.0.0.1
 appVersion: 0.4.1
 home: "https://github.com/Ajna-inc/traction"
 sources: ["https://github.com/Ajna-inc/traction"]
