@@ -82,13 +82,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Authenticate and set context
-        uses: redhat-actions/oc-login@v1
+      - name: Set up kubectl
+        uses: digitalocean/action-doctl@v2
         with:
-          openshift_server_url: ${{ secrets.OPENSHIFT_SERVER }}
-          openshift_token: ${{ secrets.OPENSHIFT_TOKEN }}
-          certificate_authority_data: ${{ secrets.OPENSHIFT_CA_CRT }}
-          namespace: ${{ secrets.OPENSHIFT_NAMESPACE }}
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+
+      - name: Authenticate and set context
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          args: kubernetes cluster kubeconfig show <cluster-name> | kubectl apply -f -
 
       - name: Traction Dev Helm
         run: |
@@ -96,6 +99,6 @@ jobs:
 
       - name: Restart Deployments
         run: |
-          oc rollout restart deployment/traction-acapy
-          oc rollout restart deployment/traction-tenant-proxy
-          oc rollout restart deployment/traction-tenant-ui
+          kubectl rollout restart deployment/traction-acapy
+          kubectl rollout restart deployment/traction-tenant-proxy
+          kubectl rollout restart deployment/traction-tenant-ui

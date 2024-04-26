@@ -1,6 +1,6 @@
 {
   "frontend": {
-    "tenantProxyPath": "http://localhost:8032",
+    "tenantProxyPath": "http://68.183.245.157:8032",
     "apiPath": "api/",
     "basePath": "/",
     "showDeveloper": true,
