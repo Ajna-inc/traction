@@ -1,6 +1,6 @@
 {
   "frontend": {
-    "tenantProxyPath": "https://68.183.245.157:8032",
+    "tenantProxyPath": "http://localhost:8032",
     "showInnkeeperReservationPassword": "FRONTEND_INNKEEPER_SHOW_RESERVATION_PASSWORD",
     "showInnkeeperAdminLogin": "FRONTEND_INNKEEPER_SHOW_ADMIN",
     "showWritableComponents": "FRONTEND_TENANT_SHOW_WRITABLE_COMPONENTS",
