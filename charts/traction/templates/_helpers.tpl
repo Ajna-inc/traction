@@ -123,7 +123,7 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- if .Values.acapy.walletStorageCredentials.existingSecret -}}
 {{- .Values.acapy.walletStorageCredentials.existingSecret -}}
 {{- else -}}
-{{ template "global.fullname" . }}-postgresql
+{{ template "global.fullname" . }}-traction-postgresql
 {{- end -}}
 {{- end -}}
 
