@@ -1634,10 +1634,10 @@ vue@^3.4.24:
     "@vue/server-renderer" "3.4.24"
     "@vue/shared" "3.4.24"
 
-vuetify@^3.5.17:
-  version "3.5.17"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.5.17.tgz#b45b94910da08b39a3c2f91f9bb4828fc96ea3e1"
-  integrity sha512-/Veklxxyu/l63q7QQOqJZeZukIKI2sBxY7FKMDcNup2KSGMjyjT+oYXy1DOdl7wlU3c3fKGQMFHqVWb0HDsyDw==
+vuetify@^3.7.6:
+  version "3.7.6"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.7.6.tgz#f966dbe74666cb847d67b3e3d8c6fee75cf972d3"
+  integrity sha512-lol0Va5HtMIqZfjccSD5DLv5v31R/asJXzc6s7ULy51PHr1DjXxWylZejhq0kVpMGW64MiV1FmA/p8eYQfOWfQ==
 
 which@^2.0.1:
   version "2.0.2"
