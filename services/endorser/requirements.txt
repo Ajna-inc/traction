@@ -6,7 +6,7 @@ asyncpg==0.24.0
 certifi==2023.11.17
 charset-normalizer==2.1.1
 click==8.0.3
-fastapi==0.110.2
+fastapi==0.115.8
 greenlet==1.1.2
 gunicorn==22.0.0
 h11==0.13.0
