@@ -32,7 +32,7 @@
     "primeicons": "^7.0.0",
     "primevue": "^3.51.0",
     "qrcode.vue": "^3.4.1",
-    "vue": "^3.4.21",
+    "vue": "^3.5.22",
     "vue-i18n": "^9.13.0",
     "vue-json-pretty": "^2.4.0",
     "vue-router": "^4.3.2",
