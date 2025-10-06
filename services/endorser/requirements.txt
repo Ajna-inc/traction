@@ -33,7 +33,7 @@ starlette==0.37.2
 starlette-context==0.3.6
 typing_extensions==4.8.0
 urllib3==1.26.18
-uvicorn==0.29.0
+uvicorn==0.37.0
 uvloop==0.16.0
 watchgod==0.8.2
 websockets==12.0
